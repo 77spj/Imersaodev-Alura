@@ -1,0 +1,36 @@
+jogo = prompt("Vamos jogar ? (1) SIM // (2) NÃO");
+if (jogo == 2) {
+  alert("Nós vemos na próxima então!");
+}
+if (jogo == 1) {
+  escolhajogador = prompt("Digite 1-pedra, 2-papel ou 3-tesoura?");
+  escolhacomputador = Math.floor(Math.random() * 3) + 1;
+
+  if (escolhajogador == escolhacomputador) {
+    alert("Computador escolheu Pedra // EMPATE!!!");
+  }
+  if (escolhajogador == 1) {
+    if (escolhacomputador == 2) {
+      alert("Computador escolheu Papel // VOCÊ PERDEU!!!");
+    }
+    if (escolhacomputador == 3) {
+      alert("Computador escolheu Tesoura // VOCÊ GANHOU!!!");
+    }
+  }
+  if (escolhajogador == 2) {
+    if (escolhacomputador == 1) {
+      alert("Computador escolheu Pedra // VOCÊ GANHOU!!!");
+    }
+    if (escolhacomputador == 3) {
+      alert("Computador escolheu Tesoura // VOCÊ PERDEU!!!");
+    }
+  }
+  if (escolhajogador == 3) {
+    if (escolhacomputador == 1) {
+      alert("Computador escolheu Pedra // VOCÊ PERDEU!!!");
+    }
+    if (escolhacomputador == 2) {
+      alert("Computador escolheu Papel // VOCÊ GANHOU!!!");
+    }
+  }
+}
