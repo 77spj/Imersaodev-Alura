@@ -51,7 +51,7 @@ while (rodada <= 3) {
     position: relative;
   }
   
-  /* Logo Styles */
+  /* Logo Alura */
   .logo {
     position: absolute;
     top: 20px;
@@ -60,7 +60,7 @@ while (rodada <= 3) {
     width: auto;
   }
   
-  /* Container with the background image */
+  /* Container com a imagem de fundo */
   .container {
     background: url('https://static.wikia.nocookie.net/round-6/images/8/81/Ponte_de_Cristal.png/revision/latest?cb=20250113215142&path-prefix=pt-br') no-repeat center center/cover;
     min-height: 100vh;
@@ -69,7 +69,7 @@ while (rodada <= 3) {
     align-items: center;
   }
   
-  /* Content div for text and button */
+  /* Content div para os textos e botões */
   .content {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -81,7 +81,7 @@ while (rodada <= 3) {
     margin-bottom: 20px;
   }
   
-  /* Button Styles */
+  /* Button estilizado */
   button {
     background-color: #ff1b7b;
     border: none;
@@ -96,10 +96,17 @@ while (rodada <= 3) {
     background-color: #1ABC9C;
   }
   
-  /* Footer Styles */
-  footer {
-    text-align: center;
-    padding: 10px;
+  /* Footer ou rodapé */
+  .footer1 {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .footer2 {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
   }
 </style>
 
@@ -113,8 +120,12 @@ while (rodada <= 3) {
       <script src="script.js"></script>
     </div>
   </div>
+  <div class="footer2">
   <footer>Alura - Imersão DEV - 2025</footer>
+  </div>
+  <div class="footer1">
+  <footer>Jonathan PS</footer>
+</div>
+   
 </body>
-
-
 </html>
