@@ -1,0 +1,118 @@
+// Código com os comandos em JavaScript
+function jogar() {
+    alert("O jogo começou! 🎮");
+
+rodada = 1;
+while (rodada <= 3) {
+  console.log("Rodada:" + rodada);
+
+  escolhajogador = prompt(
+    "Nivel  " + rodada + " - Escolha um vidro (1 - 2 - 3)"
+  );
+  pisoquebrado = Math.floor(Math.random() * 3) + 1;
+  rodada = rodada + 1;
+  if (escolhajogador == pisoquebrado) {
+    // Jogador escolheu o vidro quebrado
+    alert("O piso quebrou! \n" + "Você Perdeu!!!");
+    rodada = 1000;
+  } else {
+    // Jogador acertou o piso correto
+    alert("O piso continou intacto \n" + "Continue avançando");
+  }
+  if (rodada == 4) {
+    // Jogador conseguiu passar por todos os vidros
+    alert(
+      "Você conseguiu acertar todos os pisos. \n Parabéns!!! \n Você venceu!!!"
+    );
+  }
+}
+}
+
+// Codigos da interface HTML/CSS
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ponte de Cristal</title>
+<style>
+  
+  body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 150px;
+    width: auto;
+  }
+  
+  /* Container with the background image */
+  .container {
+    background: url('https://static.wikia.nocookie.net/round-6/images/8/81/Ponte_de_Cristal.png/revision/latest?cb=20250113215142&path-prefix=pt-br') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Content div for text and button */
+  .content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+  
+  .content h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #ff1b7b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1ABC9C;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+
+</head>
+<body>
+  <img src="https://static.wikia.nocookie.net/round-6/images/8/81/Ponte_de_Cristal.png/revision/latest?cb=20250113215142&path-prefix=pt-br" alt="Logo" class="logo">
+
+  <div class="container">
+    <div class="content">
+      <h2>Pra ganhar, é preciso coragem!</h2>
+      <p> Até mesmo para pisar em um chão feito de vidro</p>
+      <button onclick="jogar()">Bora jogar!</button>
+      <script src="script.js"></script>
+    </div>
+  </div>
+  <footer>Alura - Imersão DEV - 2025</footer>
+</body>
+
+
+</html>
