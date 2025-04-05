@@ -105,8 +105,6 @@ while (rodada <= 3) {
 
 </head>
 <body>
-  <img src="https://static.wikia.nocookie.net/round-6/images/8/81/Ponte_de_Cristal.png/revision/latest?cb=20250113215142&path-prefix=pt-br" alt="Logo" class="logo">
-
   <div class="container">
     <div class="content">
       <h2>Pra ganhar, é preciso coragem!</h2>
